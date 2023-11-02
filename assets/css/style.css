@@ -16,6 +16,7 @@
 --pd-nav: 1rem;
 --txt-fw: 500;
 --header-txt: 5vmin;
+--title-fz:1rem;
 
     /*Others*/
 --ts-time: all .4s ease-out;
@@ -34,6 +35,10 @@
 
 ul{ list-style: none;}
 a{ text-decoration: none;}
+h4{
+    font-size: var(--title-fz);
+    color: var(--blue-color);
+}
 
 section{
     width: 90%;
@@ -157,6 +162,39 @@ header{
     font-size: calc(var(--header-txt) - 1vmin);
 }
 
+/*----------- About Us -----------*/
+
+.aboutUs{
+    display: flex;   
+}
+
+.aboutUs .image-col{
+    width: 50%;
+}
+
+.aboutUs .image-col img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius) 0;
+}
+
+.aboutUs .content-col{
+    width: 50%;
+    padding-left: var(--pd-nav);
+}
+
+.content-col h2{
+margin: var(--pd-nav) 0;
+width: 60%;
+}
+
+.content-col p{
+    margin: var(--pd-nav) 0;
+}
+
+.content-col .ctn{
+    display: inline-block;
+}
 
 /*Mobile Responsivity*/
 @media screen and (max-width: 858px) {
