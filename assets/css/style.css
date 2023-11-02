@@ -15,7 +15,7 @@
 --border-radius:2rem;
 --pd-nav: 1rem;
 --txt-fw: 500;
---header-txt: 7vmin;
+--header-txt: 5vmin;
 
     /*Others*/
 --ts-time: all .4s ease-out;
@@ -141,7 +141,20 @@ header{
     background-image: url('../img/home.jpg');
     background-position: center;
     background-size: cover;
-    
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.heroContent{
+    color: var(--primary-color);
+    font-size: var(--header-txt);
+    width: 50%;
+    padding: calc( var(--pd-nav) * 2) ;
+}
+
+.heroContent h2{
+    font-size: calc(var(--header-txt) - 1vmin);
 }
 
 
