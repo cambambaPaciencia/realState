@@ -168,32 +168,59 @@ header{
     display: flex;   
 }
 
-.aboutUs .image-col{
+.aboutUs .image_col{
     width: 50%;
 }
 
-.aboutUs .image-col img{
+.aboutUs .image_col img{
     width: 100%;
     object-fit: cover;
     border-radius: var(--border-radius) 0;
 }
 
-.aboutUs .content-col{
+.aboutUs .content_col{
     width: 50%;
     padding-left: var(--pd-nav);
 }
 
-.content-col h2{
+.content_col h2{
 margin: var(--pd-nav) 0;
 width: 60%;
 }
 
-.content-col p{
+.content_col p{
     margin: var(--pd-nav) 0;
 }
 
-.content-col .ctn{
+.content_col .ctn{
     display: inline-block;
+}
+
+/*----------- Services -----------*/
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.services .item_service{
+    width: 30%;
+    border-radius: var(--border-radius);
+    padding: var(--pd-nav);
+    text-align: center;
+    box-shadow: var(--card-bs);
+}
+
+.item_service h4{
+    margin: .3rem 0;
+}
+
+.item_service i{
+    color: var(--blue-color);
+    background-color: var(--i-bg-color);
+    padding: calc(var(--pd-nav) / 2);
+    border-radius: var(--border-radius);
 }
 
 /*Mobile Responsivity*/
