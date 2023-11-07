@@ -213,6 +213,29 @@ width: 60%;
 }
 
 
+/*----------- Help -----------*/
+.help{
+    text-align: center;
+}
+
+.help .send_email{
+    border-radius: var(--border-radius);
+    margin: var(--pd-nav) auto;
+    box-shadow: var(--card-bs);
+    padding: var(--pd-nav);
+    width: 20rem;
+}
+
+.help .send_email input{
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+
 /*Mobile Responsivity*/
 @media screen and (max-width: 858px) {
        /*Navigation Bar*/
