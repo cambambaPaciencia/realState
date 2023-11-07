@@ -1,79 +1,7 @@
-:root{
 
-    /*Color*/
---primary-color: #fff;
---blue-color: #1f89ff;
---bue-color-hv: #1969c4;
---txt-color: #000;
---navlink-txt-color: #222;
---bs-color: #dadada;
---card-color: #f0f0f0;
---i-bg-color: #f2f2f2;
---properties-sec-color: #fbfbfb;
-
-    /*Sizes*/
---border-radius:2rem;
---pd-nav: 1rem;
---txt-fw: 500;
---header-txt: 5vmin;
---title-fz:1rem;
-
-    /*Others*/
---ts-time: all .4s ease-out;
---nav-bar-bs: 0.2rem 0.2rem 0.2rem #dadada;
---card-bs: 0.2rem 0.3rem 1rem #f0f0f0, -0.1rem -0.1rem 1rem #f0f0f0;
-}
-
-
-/*----------- Reset -----------*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans','Segoe UI', sans-serif;
-}
-
-ul{ list-style: none;}
-a{ text-decoration: none;}
-h4{
-    font-size: var(--title-fz);
-    color: var(--blue-color);
-}
-
-section{
-    width: 90%;
-    margin: 1rem auto;
-}
-
-header{
-    width: 100%;
-    background-color: var(--primary-color);
-    box-shadow: var(--nav-bar-bs);
-}
-
-/*----------- Components -----------*/
-.ctn{
-    background-color: var(--blue-color);
-    color: var(--primary-color) !important;
-    border-radius: var(--border-radius);
-    padding: calc(var(--pd-nav) - .4rem) var(--pd-nav) !important;
-}
-
-.ctn:hover{
-    background-color: var(--bue-color-hv);
-    transition: var(--ts-time);
-}
-
-::-webkit-scrollbar{
-    width: 5px;
-}
-
-::-webkit-scrollbar-thumb{
-    background-color: var(--blue-color);
-}
 
 /*----------- Navegation Bar -----------*/
-.navBar{
+.nav_bar{
     width: 90%;
     margin: auto;
     display: flex;
@@ -82,27 +10,26 @@ header{
     padding: var(--pd-nav);
 }
 
-.navBar h1{
+.nav_bar h1{
     color: var(--txt-color);
 }
 
-.navBar h1 .fa-home{
+.nav_bar h1 .fa-home{
     color: var(--blue-color);
 }
 
-.navLinks li{
+.nav_links li{
     display: inline-block;
     margin-left: calc(var(--pd-nav) + 1rem);
     padding: calc(var(--pd-nav) - .7rem);
 }
 
-.navLinks li a{
+.nav_links li a{
     font-weight: var(--txt-fw);
     color: var(--navlink-txt-color);
 }
 
-
-/*Mobile MenuBtn*/
+/*----------- Mobile MenuBtn -----------*/
 .menuBtn{
     background-color: transparent;
     border: none;
@@ -151,34 +78,35 @@ header{
     align-items: center;
 }
 
-.heroContent{
+.hero_content{
     color: var(--primary-color);
     font-size: var(--header-txt);
     width: 50%;
     padding: calc( var(--pd-nav) * 2) ;
 }
 
-.heroContent h2{
+.hero_content h2{
     font-size: calc(var(--header-txt) - 1vmin);
 }
 
+
 /*----------- About Us -----------*/
 
-.aboutUs{
+.about_us{
     display: flex;   
 }
 
-.aboutUs .image_col{
+.about_us .image_col{
     width: 50%;
 }
 
-.aboutUs .image_col img{
+.about_us .image_col img{
     width: 100%;
     object-fit: cover;
     border-radius: var(--border-radius) 0;
 }
 
-.aboutUs .content_col{
+.about_us .content_col{
     width: 50%;
     padding-left: var(--pd-nav);
 }
@@ -201,7 +129,7 @@ width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    
 }
 
 .services .item_service{
@@ -214,6 +142,11 @@ width: 60%;
 
 .item_service h4{
     margin: .3rem 0;
+    color: var(--navlink-txt-color);
+}
+
+.item_service p{
+    font-size: 11pt;
 }
 
 .item_service i{
@@ -223,13 +156,69 @@ width: 60%;
     border-radius: var(--border-radius);
 }
 
+/*----------- Properties -----------*/
+.properties{
+    background-color: var(--properties-sec-color);
+    padding: var(--pd-nav);
+}
+
+.properties .properties_content{
+    text-align: center;
+}
+
+.properties_content p{
+    width: 30%;
+    font-size: 11pt;
+    margin: 0 auto;
+}
+
+.properties .row{
+    margin: calc(var(--pd-nav) * 2);
+    display: flex;
+    justify-content: center;
+    gap: 1rem 3rem;
+}
+
+.property_card{
+    width: 20%;
+    background-color: var(--primary-color);
+    padding: var(--pd-nav);
+    font-weight: bold;
+    border-radius: calc(var(--border-radius) / 2);
+    box-shadow: var(--card-bs);
+}
+
+.property_card img{
+    width: 100%;
+    height: 15rem;
+    border-radius: calc(var(--border-radius) / 2);
+}
+
+.property_card .content h4{
+    text-align: right;
+    color: var(--navlink-txt-color);
+}
+
+.property_card .content .detail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.property_card .content .detail p{
+    font-size: 10pt;
+}
+
+.property_card .content .detail span{
+    color: var(--blue-color);
+}
+
+
 /*Mobile Responsivity*/
 @media screen and (max-width: 858px) {
        /*Navigation Bar*/
     .menuBtn{
         display: block;
     }
-
 
     .navLinks {
         height: 100vh;
