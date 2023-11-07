@@ -3,7 +3,7 @@
     /*Color*/
 --primary-color: #fff;
 --blue-color: #1f89ff;
---bue-color-hv: #1969c4;
+--blue-color-hv: #1969c4;
 --txt-color: #000;
 --navlink-txt-color: #222;
 --bs-color: #dadada;
@@ -62,7 +62,7 @@ header{
 }
 
 .ctn:hover{
-    background-color: var(--bue-color-hv);
+    background-color: var(--blue-color-hv);
     transition: var(--ts-time);
 }
 
