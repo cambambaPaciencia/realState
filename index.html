@@ -190,5 +190,15 @@
         </div>
     </footer>
 
+    <script>
+        const menuBtn = document.querySelector('.menuBtn');
+        const navLinks = document.querySelector('.nav_links');
+
+        menuBtn.addEventListener('click', ()=>{
+            navLinks.classList.toggle('mobileMenu');
+            menuBtn.classList.toggle('active');
+        });
+    </script>
+
 </body>
 </html>
