@@ -29,6 +29,10 @@
     color: var(--navlink-txt-color);
 }
 
+.nav_links li a:hover{
+    color: var(--blue-color);
+}
+
 /*----------- Mobile MenuBtn -----------*/
 .menuBtn{
     background-color: transparent;
@@ -181,12 +185,18 @@ width: 60%;
 }
 
 .property_card{
-    width: 20%;
+    width: 22%;
     background-color: var(--primary-color);
     padding: var(--pd-nav);
     font-weight: bold;
     border-radius: calc(var(--border-radius) / 2);
     box-shadow: var(--card-bs);
+    transition: var(--ts-time);
+}
+
+.property_card:hover{
+    cursor: pointer;
+    scale: 1.1;
 }
 
 .property_card img{
@@ -224,7 +234,7 @@ width: 60%;
     margin: var(--pd-nav) auto;
     box-shadow: var(--card-bs);
     padding: var(--pd-nav);
-    width: 20rem;
+    width: 21rem;
 }
 
 .help .send_email input{
@@ -236,7 +246,7 @@ width: 60%;
 }
 
 /*----------- Footer -----------*/
-footer{
+.footer{
     background-color: var(--blue-color);
     color: var(--primary-color) !important;
 }
@@ -364,6 +374,7 @@ footer{
 
     .property_card{
         width: 100%;
+        
     }
 
     /*----------- Help -----------*/
@@ -383,15 +394,50 @@ footer{
         margin-top: var(--pd-nav);
     }
 
+    .footer_bottom{
+        padding: var(--pd-nav);
+    }
+
 }
 
 /*----------- Tablet Responsivity -----------*/
 
-@media screen and (width <= 900px) {
+@media screen and (width <= 999px) {
+    .menuBtn{
+        display: block;
+    }
+
+    .nav_links {
+        height: calc(100vh - 4rem);
+        width: 100%;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        left: -100%;
+        text-align: center;
+        transition: var(--ts-time);
+    }
+
+    .nav_links li{
+        display: block;
+    }
+
+    .mobileMenu{
+        left: 0%;
+    }
+
+    .nav_links li:nth-child(1){
+        margin-top: 8rem;
+    }
+
+    .nav_links li{
+        margin-top: 1rem;
+    }
+
 
     .property_card{
         flex: 1 1 30%;
-        width: 50%;
     }
 }
 
