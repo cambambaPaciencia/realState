@@ -1,18 +1,18 @@
-<h1 align="center">
+<h1>
     R. STATE
 </h1>
 
-## 💻 Projeto
+## Projeto
 
-`R. State` é um elegante website desenvolvida com _HTML_, _CSS_ e _JavaScript_. Um modelo de sites de venda de propriedades imobiliárias. Proporciona uma experiência moderna e intuitiva aos usuários ao explorar e contatar anunciantes. Design retirado do figma.
+`R. State` é um elegante website desenvolvida com _HTML_, _CSS_ e _JavaScript_. Um modelo de sites para divulgação de propriedades. Proporciona uma experiência moderna e intuitiva aos usuários ao explorar e contatar anunciantes.
 
-## 🚀 Tecnologias
+## Tecnologias
 
 - HTML
 - CSS
 - JavaScript
 
-## 📔 Conhecimentos abordados
+## Conhecimentos abordados
 
 - [x] Váriaveis do css no `:root`
 - [x] `Flexbox` CSS
@@ -20,4 +20,4 @@
 - [x] `Transições` CSS
 - [x] Manipulação de classes CSS com `JavaScript`
 
-## Developed by Miguel Kambamba a.K.a Cambamba Paciência.
+## Developed by Miguel Kambamba

@@ -164,6 +164,7 @@ width: 60%;
 .properties{
     background-color: var(--properties-sec-color);
     padding: var(--pd-nav);
+    width: 100%;
 }
 
 .properties .properties_content{
