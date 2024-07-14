@@ -19,5 +19,3 @@
 - [x] `Media Queries`
 - [x] `Transições` CSS
 - [x] Manipulação de classes CSS com `JavaScript`
-
-## Developed by Miguel Kambamba
